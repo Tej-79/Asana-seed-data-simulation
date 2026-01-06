@@ -1,0 +1,6 @@
+# Generated database
+output/*.sqlite
+
+# Python cache
+__pycache__/
+*.pyc
