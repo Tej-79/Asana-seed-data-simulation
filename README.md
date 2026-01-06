@@ -30,7 +30,6 @@ This project focuses on **data realism and methodology**, not UI or machine lear
 ## Setup Instructions
 
 ### 1. Install dependencies
----bash
 pip install -r requirements.txt
 
 ### 2. Run the generator
@@ -40,7 +39,13 @@ python src/main.py
 ## Output/Results
 Running the generator creates a SQLite database at:
 output/asana_simulation.sqlite
-    
+
+**Note:**  
+The SQLite database file is intentionally **not committed to the repository** due to GitHub file size limits.  
+It can be generated locally by running:  python src/main.py
+
+---
+
 The database represents a realistic Asana workspace, including:
 - Thousands of users
 - Hundreds of teams and projects
