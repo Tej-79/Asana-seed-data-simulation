@@ -23,7 +23,7 @@ def main():
     # Step 1: Create tables
     initialize_schema(conn, SCHEMA_PATH)
 
-    # Step 2: Generate data (order matters)
+    # Step 2: Generate data
     org_ids = generate_organizations(conn)
     user_ids = generate_users(conn, org_ids)
     team_ids = generate_teams(conn, org_ids)

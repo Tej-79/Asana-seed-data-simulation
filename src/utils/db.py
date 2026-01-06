@@ -11,7 +11,6 @@ def get_db_connection(db_path: str):
 
 def initialize_schema(conn, schema_path: str):
     #Executes the schema.sql file to create all tables.
-    
     schema_sql = Path(schema_path).read_text()
     conn.executescript(schema_sql)
     conn.commit()
